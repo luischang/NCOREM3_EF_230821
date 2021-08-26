@@ -31,6 +31,13 @@ namespace NCOREM3_EF.CodeFirst.Models
         //    modelBuilder.Entity<PlayerTeam>(entity =>
         //    {
         //        entity.HasKey(x => new { x.PlayersId, x.TeamsId });
+                
+        //    });
+
+        //    modelBuilder.Entity<Player>(entity =>
+        //    {
+        //        entity.HasKey(x => new { x.Id });
+                
 
         //    });
 

@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCOREM3_EF.CodeFirst", "NCOREM3_EF.CodeFirst\NCOREM3_EF.CodeFirst.csproj", "{F711224A-B3A3-43AB-B083-F6E9883C9514}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCOREM3_EF.CodeFirst", "NCOREM3_EF.CodeFirst\NCOREM3_EF.CodeFirst.csproj", "{F711224A-B3A3-43AB-B083-F6E9883C9514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCOREM3_EF.DatabaseFirst", "NCOREM3_EF.DatabaseFirst\NCOREM3_EF.DatabaseFirst.csproj", "{A747DA25-DA3F-4DEA-BFB7-CFD20316CB30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCOREM4_MVCEF.CodeFirst", "NCOREM4_MVCEF.CodeFirst\NCOREM4_MVCEF.CodeFirst.csproj", "{CB30A3A2-FE9E-454F-B15F-419384330E8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCOREM4_MVCEF.DatabaseFirst", "NCOREM4_MVCEF.DatabaseFirst\NCOREM4_MVCEF.DatabaseFirst.csproj", "{E44112AB-8EC1-44CB-B0D2-FCB4DCF76FC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{F711224A-B3A3-43AB-B083-F6E9883C9514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F711224A-B3A3-43AB-B083-F6E9883C9514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F711224A-B3A3-43AB-B083-F6E9883C9514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A747DA25-DA3F-4DEA-BFB7-CFD20316CB30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A747DA25-DA3F-4DEA-BFB7-CFD20316CB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A747DA25-DA3F-4DEA-BFB7-CFD20316CB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A747DA25-DA3F-4DEA-BFB7-CFD20316CB30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB30A3A2-FE9E-454F-B15F-419384330E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB30A3A2-FE9E-454F-B15F-419384330E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB30A3A2-FE9E-454F-B15F-419384330E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB30A3A2-FE9E-454F-B15F-419384330E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E44112AB-8EC1-44CB-B0D2-FCB4DCF76FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E44112AB-8EC1-44CB-B0D2-FCB4DCF76FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E44112AB-8EC1-44CB-B0D2-FCB4DCF76FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E44112AB-8EC1-44CB-B0D2-FCB4DCF76FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
