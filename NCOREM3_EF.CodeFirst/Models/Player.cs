@@ -19,8 +19,11 @@ namespace NCOREM3_EF.CodeFirst.Models
         public int Dorsal { get; set; }
         [Column(TypeName = "date")]
         public DateTime DateOfBirth { get; set; }
-
-
+        [Column(TypeName = "int")]
+        public int SoccerPositionId { get; set; }
+        
+        public virtual SoccerPosition SoccerPosition { get; set; }
+        public virtual List<Team> Teams { get; set; }
 
 
     }

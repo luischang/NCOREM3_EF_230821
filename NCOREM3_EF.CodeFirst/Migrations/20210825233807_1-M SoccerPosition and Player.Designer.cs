@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NCOREM3_EF.CodeFirst.Models;
 
 namespace NCOREM3_EF.CodeFirst.Migrations
 {
     [DbContext(typeof(MundialDBContext))]
-    partial class MundialDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210825233807_1-M SoccerPosition and Player")]
+    partial class _1MSoccerPositionandPlayer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,21 +98,6 @@ namespace NCOREM3_EF.CodeFirst.Migrations
                     b.ToTable("Team");
                 });
 
-            modelBuilder.Entity("PlayerTeam", b =>
-                {
-                    b.Property<int>("PlayersId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TeamsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("PlayersId", "TeamsId");
-
-                    b.HasIndex("TeamsId");
-
-                    b.ToTable("PlayerTeam");
-                });
-
             modelBuilder.Entity("NCOREM3_EF.CodeFirst.Models.Player", b =>
                 {
                     b.HasOne("NCOREM3_EF.CodeFirst.Models.SoccerPosition", "SoccerPosition")
@@ -118,21 +105,6 @@ namespace NCOREM3_EF.CodeFirst.Migrations
                         .HasForeignKey("SoccerPositionId");
 
                     b.Navigation("SoccerPosition");
-                });
-
-            modelBuilder.Entity("PlayerTeam", b =>
-                {
-                    b.HasOne("NCOREM3_EF.CodeFirst.Models.Player", null)
-                        .WithMany()
-                        .HasForeignKey("PlayersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("NCOREM3_EF.CodeFirst.Models.Team", null)
-                        .WithMany()
-                        .HasForeignKey("TeamsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("NCOREM3_EF.CodeFirst.Models.SoccerPosition", b =>

@@ -19,13 +19,32 @@ namespace NCOREM3_EF.CodeFirst.Models
             builder
                 .UseSqlServer(cnx)
                 .LogTo(Console.WriteLine, LogLevel.Information);
+
+
+
             base.OnConfiguring(builder);
 
         }
 
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<PlayerTeam>(entity =>
+        //    {
+        //        entity.HasKey(x => new { x.PlayersId, x.TeamsId });
+
+        //    });
+
+        //}
+
+
+
+
+
         public virtual DbSet<Player> Player { get; set; }
         public virtual DbSet<Team> Team { get; set; }
         public virtual DbSet<Person> Person { get; set; }
+        public virtual DbSet<SoccerPosition> SoccerPosition { get; set; }
+        //public virtual DbSet<PlayerTeam> PlayerTeam { get; set; }
 
     }
 }

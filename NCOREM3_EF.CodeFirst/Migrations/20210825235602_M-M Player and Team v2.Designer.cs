@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NCOREM3_EF.CodeFirst.Models;
 
 namespace NCOREM3_EF.CodeFirst.Migrations
 {
     [DbContext(typeof(MundialDBContext))]
-    partial class MundialDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210825235602_M-M Player and Team v2")]
+    partial class MMPlayerandTeamv2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
